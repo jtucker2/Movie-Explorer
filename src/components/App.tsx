@@ -36,7 +36,9 @@ function App() {
 
   return (
     <>
-      <img id="backdrop" src={backdropURL}></img>
+      <div id="backdrop-container">
+        <img id="backdrop" src={backdropURL}></img>
+      </div>
       <div id="container">
         {loadedData.map((item) => <Item config={item}/>)}
       </div>

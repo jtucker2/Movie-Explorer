@@ -38,6 +38,11 @@
 
 /* MOVIE LIST ------------------------------------------------------------------ */
 
+#backdrop-container {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 #backdrop {
   width: 100%;
   pointer-events: none;
@@ -62,7 +67,7 @@
 
 #container {
   position: relative;
-  top: -380px;
+  top: -260px;
   width: 100%;
   /* height: calc(100% - 100px); */
   display: grid;
