@@ -38,24 +38,6 @@
 
 /* MOVIE LIST ------------------------------------------------------------------ */
 
-#backdrop-container {
-  max-height: 100vh;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(black 50%, transparent 95%);
-  /* mask-image: linear-gradient(black, transparent); */
-}
-
-#backdrop {
-  width: 100%;
-  pointer-events: none;
-}
-
-#bottom-shadow {
-  width: 100%;
-  height: 0px;
-  box-shadow: 0 4px 2px -2px black;
-}
-
 .item {
   display: flex;
   flex-direction: column;

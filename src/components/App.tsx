@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../css/App.css'
 import Item from './Item';
+import HeroHeader from './HeroHeader';
 
 async function apiFetch() {
   const options = {
@@ -32,13 +33,9 @@ function App() {
     fetchData();
   }, [])
 
-  const backdropURL: string = "https://image.tmdb.org/t/p/original/628Dep6AxEtDxjZoGP78TsOxYbK.jpg"
-
   return (
     <>
-      <div id="backdrop-container">
-        <img id="backdrop" src={backdropURL}></img>
-      </div>
+      <HeroHeader/>
       <div id="container">
         {loadedData.map((item) => <Item config={item}/>)}
       </div>
