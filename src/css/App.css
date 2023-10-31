@@ -41,11 +41,19 @@
 #backdrop-container {
   max-height: 100vh;
   overflow: hidden;
+  -webkit-mask-image: linear-gradient(black 50%, transparent 95%);
+  /* mask-image: linear-gradient(black, transparent); */
 }
 
 #backdrop {
   width: 100%;
   pointer-events: none;
+}
+
+#bottom-shadow {
+  width: 100%;
+  height: 0px;
+  box-shadow: 0 4px 2px -2px black;
 }
 
 .item {
@@ -67,7 +75,7 @@
 
 #container {
   position: relative;
-  top: -260px;
+  top: -270px;
   width: 100%;
   /* height: calc(100% - 100px); */
   display: grid;
@@ -76,7 +84,7 @@
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: 240px;
   grid-gap: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 #list-poster {

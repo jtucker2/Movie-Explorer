@@ -32,7 +32,7 @@ function App() {
     fetchData();
   }, [])
 
-  const backdropURL: string = "https://image.tmdb.org/t/p/original/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg"
+  const backdropURL: string = "https://image.tmdb.org/t/p/original/628Dep6AxEtDxjZoGP78TsOxYbK.jpg"
 
   return (
     <>
