@@ -38,6 +38,11 @@
 
 /* MOVIE LIST ------------------------------------------------------------------ */
 
+#backdrop {
+  width: 100%;
+  pointer-events: none;
+}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -56,6 +61,8 @@
 }
 
 #container {
+  position: relative;
+  top: -380px;
   width: 100%;
   /* height: calc(100% - 100px); */
   display: grid;
@@ -64,7 +71,7 @@
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: 240px;
   grid-gap: 10px;
-  /* padding-top: 100px; */
+  padding-top: 10px;
 }
 
 #list-poster {

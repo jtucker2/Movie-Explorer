@@ -32,8 +32,11 @@ function App() {
     fetchData();
   }, [])
 
+  const backdropURL: string = "https://image.tmdb.org/t/p/original/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg"
+
   return (
     <>
+      <img id="backdrop" src={backdropURL}></img>
       <div id="container">
         {loadedData.map((item) => <Item config={item}/>)}
       </div>
