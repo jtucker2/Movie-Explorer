@@ -33,3 +33,20 @@ export interface Series {
   vote_count: number;
   origin_country: string[];
 }
+
+export interface Image {
+  aspect_ratio: number;
+  height: number;
+  iso_639_1: string;
+  file_path: string;
+  vote_average: number;
+  vote_count: number;
+  width: number;
+}
+
+export interface Images {
+  id: number;
+  backdrops: Image[];
+  logos: Image[];
+  posters: Image[];
+}
