@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Movie } from '../apiInterfaces';
+import { Movie } from '../types/api';
 // import posterholder from '../assets/posterholder.png';
 
 function titleLengthLimiter(title: string) {
