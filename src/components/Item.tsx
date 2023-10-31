@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Config } from '../apiInterfaces';
+import { Movie } from '../apiInterfaces';
 // import posterholder from '../assets/posterholder.png';
 
 function titleLengthLimiter(title: string) {
@@ -10,7 +10,7 @@ function titleLengthLimiter(title: string) {
 }
 
 interface ItemProps {
-  config: Config;
+  config: Movie;
   // enterMoviePage: () => void;
   // selectMovie: () => void;
 }
