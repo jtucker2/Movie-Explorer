@@ -16,6 +16,13 @@ export interface Movie {
   vote_count: number;
 }
 
+export interface MovieList {
+  page: number;
+  results: Movie[]
+  total_pages: number;
+  total_results: number;
+}
+
 export interface Series {
   adult: boolean;
   backdrop_path: string;
@@ -32,6 +39,13 @@ export interface Series {
   vote_average: number;
   vote_count: number;
   origin_country: string[];
+}
+
+export interface SeriesList {
+  page: number;
+  results: Series[]
+  total_pages: number;
+  total_results: number;
 }
 
 export interface Image {
