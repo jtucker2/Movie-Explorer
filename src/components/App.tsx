@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import '../css/App.css'
 import Item from './Item';
 
 async function apiFetch() {
