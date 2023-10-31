@@ -1,4 +1,4 @@
-import { MovieList } from "./types/api";
+import { Images, MovieList } from "./types/api";
 
 const options = {
   method: 'GET',
@@ -12,6 +12,14 @@ const host: string = "https://api.themoviedb.org"
 
 export async function fetchTrendingMovies() {
   const result: MovieList = await fetch(host + "/3/trending/movie/day?language=en-US", options)
+    .then(response => response.json())
+    .catch(err => console.error(err));
+  
+  return result;
+}
+
+export async function fetchMovieImages(id: number) {
+  const result: Images = await fetch(host + "/3/movie/" + id + "/images", options)
     .then(response => response.json())
     .catch(err => console.error(err));
   
